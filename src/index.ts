@@ -40,3 +40,18 @@ student.push()//method
 const enum Size {Small=1,Medium,Large}
 let mySize :Size = Size.Medium
 console.log(mySize);
+
+//---function---
+// the function set default value as void , so set the type
+function calculateTax(income :number):number {
+    if(income>30_000)
+    return income*23
+return income*45
+}
+calculateTax(40)
+
+function displayNumber(int:number) {
+    return int +3
+}
+displayNumber(3)
+console.log(120000);

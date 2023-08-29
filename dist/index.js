@@ -14,4 +14,15 @@ let student = [1, 'Manisha'];
 student.push();
 let mySize = 2;
 console.log(mySize);
+function calculateTax(income) {
+    if (income > 30000)
+        return income * 23;
+    return income * 45;
+}
+calculateTax(40);
+function displayNumber(int) {
+    return int + 3;
+}
+displayNumber(3);
+console.log(120000);
 //# sourceMappingURL=index.js.map
