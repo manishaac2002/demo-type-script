@@ -54,4 +54,27 @@ function displayNumber(int:number) {
     return int +3
 }
 displayNumber(3)
-console.log(120000);
+
+
+//objects
+let employee = {
+    id:"1",
+    name:"manisha"
+}
+// *----------------------------*
+let employees: Employee = {
+    id:1,
+    name:"manisha",
+    retire:(date:Date)=>{
+        console.log(date);
+    }
+}
+console.log(employee);
+
+//type aliases (reuseable code)
+//E --> capital letter
+type Employee ={
+    id:number,
+    name:string,
+    retire :(date:Date) => void//error fun syntax
+}

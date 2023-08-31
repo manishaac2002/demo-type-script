@@ -25,4 +25,8 @@ function displayNumber(int) {
 }
 displayNumber(3);
 console.log(120000);
+const employee = {
+    id: "1",
+    name: "manisha"
+};
 //# sourceMappingURL=index.js.map
