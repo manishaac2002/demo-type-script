@@ -127,3 +127,19 @@ greet('manisha')
 
 //cannot return null and undefined
 // greet(null) greet(undefined)
+
+//---optional chaining---
+//optional operator --> .?
+type Customer = {
+    birthday: Date
+}
+
+function getCustomer(id: number): Customer | null {
+    return id === 0 ? null : { birthday: new Date }
+}
+
+let customer = getCustomer(0)
+//instead of this below line
+// if (customer !== null && customer !== undefined)
+//using optional property optional access
+    console.log(customer?.birthday);
