@@ -24,9 +24,24 @@ function displayNumber(int) {
     return int + 3;
 }
 displayNumber(3);
-console.log(120000);
-const employee = {
+let employee = {
     id: "1",
     name: "manisha"
 };
+let employees = {
+    id: 1,
+    name: "manisha",
+    retire: (date) => {
+        console.log(date);
+    }
+};
+console.log(employee);
+function kgToLbs(weight) {
+    if (typeof weight === 'number')
+        return weight * 2.2;
+    else
+        return parseInt(weight) * 2.2;
+}
+kgToLbs(10);
+kgToLbs('10kgs');
 //# sourceMappingURL=index.js.map
