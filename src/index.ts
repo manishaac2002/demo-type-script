@@ -142,4 +142,7 @@ let customer = getCustomer(0)
 //instead of this below line
 // if (customer !== null && customer !== undefined)
 //using optional property optional access
-    console.log(customer?.birthday);
+    console.log(customer?.birthday?.getFullYear());
+
+//optional element access operator
+
